@@ -8,7 +8,7 @@ import java.time.LocalTime;
 
 @RestController
 @RequestMapping(value = "/ping")
-public class HealthCheck {
+public class HealthCheckController {
 
     @GetMapping
     public String ping(){
