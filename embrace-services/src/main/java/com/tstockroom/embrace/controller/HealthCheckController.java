@@ -1,4 +1,4 @@
-package com.tstockroom.embrace.controllers;
+package com.tstockroom.embrace.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,10 +8,10 @@ import java.time.LocalTime;
 
 @RestController
 @RequestMapping(value = "/ping")
-public class HealthCheckController {
+public class HealthCheckController:q! {
 
     @GetMapping
-    public String ping() {
-        return "Pinging.. " + LocalTime.now().toString();
+    public String ping(){
+        return "Service is up with current time: " + LocalTime.now().toString();
     }
 }
